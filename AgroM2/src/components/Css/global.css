@@ -11,11 +11,19 @@
   background-image: url('../assets/background_intro.png'); /* Certifique-se de ajustar o caminho da imagem se necessário */
   background-position: center top;
   background-size: cover;
-  height: 80vh;
+  height: 94vh;
 }
 
 
 /* Ajustes responsivos para a IntroSection */
+
+@media (max-width: 1350px) {
+  #intro-section {
+    height: 78vh; /* Ajuste a altura para telas menores */
+    background-position: right top; /* Puxa a imagem para a direita e para cima */
+  }
+}
+
 
 @media (max-width: 950px) {
   #intro-section {
