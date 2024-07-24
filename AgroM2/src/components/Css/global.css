@@ -1,0 +1,82 @@
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS - Component IntroSection */
+
+#intro-section {
+  background-image: url('../assets/background_intro.png'); /* Certifique-se de ajustar o caminho da imagem se necessário */
+  background-position: center top;
+  background-size: cover;
+  height: 80vh;
+}
+
+/* Ajustes responsivos para a IntroSection */
+@media (max-width: 768px) {
+  #intro-section {
+    height: 70vh; /* Ajuste a altura para telas menores */
+    background-position: right top; /* Puxa a imagem para a direita e para cima */
+  }
+}
+
+@media (max-width: 480px) {
+  #intro-section {
+    height: 60vh; /* Ajuste a altura para telas ainda menores */
+    background-position: right top; /* Puxa a imagem para a direita e para cima */
+  }
+}
+
+
+/* CSS - Component IntermedSection */
+
+/* Estilo personalizado para o contêiner das plantas */
+.container-plant {
+  position: relative;
+}
+
+.container-farm{
+  position: absolute;
+  margin-top: 5rem;
+}
+
+.plant {
+  position: relative;
+  max-width: 15vw; /* Limita o tamanho máximo */
+  height: auto;
+}
+
+.plant01 {
+  top: -10%;
+  left: 100%;
+  transform: translate(-380%, -10%);
+}
+
+.plant02 {
+  top: 50%;
+  left: -435%;
+  transform: translate(-70%, 75%);
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .container-plant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plant {
+    position: relative;
+    width: 50vw;
+    max-width: 100px;
+  }
+
+  .plant01, .plant02 {
+    top: auto;
+    left: auto;
+    transform: none;
+  }
+}
+
