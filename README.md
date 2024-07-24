@@ -20,28 +20,7 @@ Siga os passos abaixo para configurar e rodar o projeto localmente:
    ```bash
    git clone https://github.com/seu-usuario/seu-repositorio.git
    cd seu-repositorio
+   
+2. **Estrutura do Projeto:**
 
-2. Estrutura do Projeto
-
-├── public
-│   ├── favicon.ico
-│   └── index.html
-├── src
-│   ├── assets
-│   │   ├── background_intro.png
-│   │   ├── farmer.png
-│   │   ├── plant01.png
-│   │   ├── plant02.png
-│   ├── components
-│   │   ├── Navbar.jsx
-│   │   ├── IntroSection.jsx
-│   │   ├── IntermedSection.jsx
-│   │   ├── Footer.jsx
-│   ├── css
-│   │   ├── global.css
-│   ├── App.jsx
-│   └── main.jsx
-├── .gitignore
-├── package.json
-├── README.md
-└── vite.config.js
+![Screenshot from 2024-07-24 15-39-30](https://github.com/user-attachments/assets/2b4734e4-4446-4fca-86e2-b7ac8e6abc39)
