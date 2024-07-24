@@ -1,6 +1,7 @@
 import React from 'react';
 import '../Css/global.css'; // Importe o arquivo CSS global
 import logo from '../assets/logo_white.png'; // Importe a logo
+import { FaWhatsapp, FaInstagram, FaLinkedin } from 'react-icons/fa'; // Importar ícones de redes sociais
 
 const Footer = () => {
   return (
@@ -36,12 +37,15 @@ const Footer = () => {
             <li>CNPJ: 46.082.930/0001-32</li>
           </ul>
           <div className="flex space-x-4 mt-4 text-gray-400">
-            <i className="fab fa-whatsapp"></i>
-            <i className="fab fa-facebook-f"></i>
-            <i className="fab fa-instagram"></i>
-            <i className="fab fa-youtube"></i>
-            <i className="fab fa-linkedin-in"></i>
-            <i className="fab fa-tiktok"></i>
+            <a href="https://wa.me/556592729267" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+              <FaWhatsapp className="w-6 h-6" />
+            </a>
+            <a href="https://www.instagram.com/agro.m2/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <FaInstagram className="w-6 h-6" />
+            </a>
+            <a href="https://www.linkedin.com/company/agro-m2/?originalSubdomain=br" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <FaLinkedin className="w-6 h-6" />
+            </a>
           </div>
         </div>
       </div>
