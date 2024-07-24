@@ -11,20 +11,36 @@
   background-image: url('../assets/background_intro.png'); /* Certifique-se de ajustar o caminho da imagem se necessário */
   background-position: center top;
   background-size: cover;
-  height: 94vh;
+  height: 80vh;
 }
 
+
 /* Ajustes responsivos para a IntroSection */
-@media (max-width: 768px) {
+
+@media (max-width: 950px) {
   #intro-section {
-    height: 70vh; /* Ajuste a altura para telas menores */
+    height: 66vh; /* Ajuste a altura para telas menores */
     background-position: right top; /* Puxa a imagem para a direita e para cima */
+  }
+
+  #container-navbar{
+    font-size: small;
+  }
+}
+
+@media (max-width: 810px) {
+  #intro-section {
+    height: 50vh; /* Ajuste a altura para telas menores */
+    background-position: right top; /* Puxa a imagem para a direita e para cima */
+  }
+  #container-navbar{
+    font-size: 11px;
   }
 }
 
 @media (max-width: 480px) {
   #intro-section {
-    height: 60vh; /* Ajuste a altura para telas ainda menores */
+    height: 40vh; /* Ajuste a altura para telas ainda menores */
     background-position: right top; /* Puxa a imagem para a direita e para cima */
   }
 }

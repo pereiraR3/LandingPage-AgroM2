@@ -1,6 +1,5 @@
 import React from 'react';
-import '../Css/global.css'; // Importe o arquivo CSS global
-import background from '../assets/background_intro.png'; // Importe a imagem de fundo
+import '../Css/global.css';
 
 const IntroSection = () => {
   return (
