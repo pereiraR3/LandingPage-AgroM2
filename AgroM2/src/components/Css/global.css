@@ -14,7 +14,6 @@
   height: 94vh;
 }
 
-
 /* Ajustes responsivos para a IntroSection */
 
 @media (max-width: 1350px) {
@@ -53,55 +52,100 @@
   }
 }
 
+@media (max-width: 375px) {
+  #intro-section {
+    height: 50vh; /* Ajuste a altura para telas ainda menores */
+    background-position: right top; /* Puxa a imagem para a direita e para cima */
+  }
+}
 
 /* CSS - Component IntermedSection */
 
-/* Estilo personalizado para o contêiner das plantas */
-.container-plant {
-  position: relative;
-}
-
-.container-farm{
-  position: absolute;
-  margin-top: 5rem;
+.plants-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .plant {
-  position: relative;
-  max-width: 15vw; /* Limita o tamanho máximo */
+  width: 10vw; /* Ajuste o tamanho conforme necessário */
   height: auto;
 }
 
-.plant01 {
-  top: -10%;
-  left: 100%;
-  transform: translate(-380%, -10%);
-}
-
-.plant02 {
-  top: 50%;
-  left: -435%;
-  transform: translate(-70%, 75%);
-}
-
-/* Ajustes responsivos */
 @media (max-width: 768px) {
-  .container-plant {
-    display: flex;
-    flex-direction: column;
+  .plants-container {
+    position: relative;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
     align-items: center;
+    gap: 14rem;
+
   }
 
   .plant {
-    position: relative;
-    width: 50vw;
-    max-width: 100px;
+    width: 20vw; /* Ajuste o tamanho conforme necessário */
   }
 
-  .plant01, .plant02 {
-    top: auto;
-    left: auto;
-    transform: none;
+  .plant-01 {
+    margin-bottom: 10px; /* Espaçamento entre as plantas */
   }
+}
+
+@media (max-width: 810px) {
+  .plants-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+
+  }
+
+  .plant {
+    width: 9vw; /* Ajuste o tamanho conforme necessário */
+  }
+
+  .plant-01 {
+    margin-bottom: 10px; /* Espaçamento entre as plantas */
+  }
+}
+
+@media (max-width: 480px) {
+  .plants-container {
+    position: relative;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    gap: 12rem;
+  }
+
+  .plant {
+    width: 20vw; /* Ajuste o tamanho conforme necessário */
+  }
+
+  .plant-01 {
+    margin-bottom: 10px; /* Espaçamento entre as plantas */
+  }
+}
+
+  @media (max-width: 384px) {
+    .plants-container {
+      position: relative;
+      flex-direction: row;
+      margin-left: auto;
+      margin-right: auto;
+      align-items: center;
+      gap: 9rem;
+    }
+
+    .plant {
+      width: 20vw; /* Ajuste o tamanho conforme necessário */
+    }
+  
+    .plant-01 {
+      margin-bottom: 10px; /* Espaçamento entre as plantas */
+    }
+
 }
 
